@@ -11,13 +11,17 @@
       rel="stylesheet"
     />
     <!-- GDGoCBowen30DayChallenge Day 7 -->
-    <title>Tailwind Project</title>
+    <title>Tailwind Responsive navbar project</title>
   </head>
   <body class="text-blue-900 bg-blue-200">
     <header class="md:flex md:justify-between md:items-center bg-blue-400">
       <section class="flex justify-between flex-1 p-4">
         <div>
-          <h1 class="font-['Pacifico'] text-4xl md:hover:tracking-wider  transition-all duration-300 ease-in-out">La Maison del Sabor</h1>
+          <h1
+            class="font-['Pacifico'] text-4xl md:hover:tracking-wider transition-all duration-300 ease-in-out"
+          >
+            La Maison del Sabor
+          </h1>
           <p class="font-bold text-lg">...more than satisfaction</p>
         </div>
 
@@ -32,16 +36,18 @@
           class="size-6"
         >
           <path
+            id="burgerSrc"
             stroke-linecap="round"
             stroke-linejoin="round"
             d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
           />
         </svg>
       </section>
-      <nav class="hidden md:block md:flex-1" id="menu">
-        <ul
-          class="grid grid-cols-2 md:flex md:flex-row md:justify-evenly p-1"
-        >
+      <nav
+        id="menu"
+        class="overflow-hidden max-h-0 opacity-0 transition-all duration-500 ease-in-out md:max-h-full md:opacity-100 md:block md:flex-1"
+      >
+        <ul class="grid grid-cols-2 md:flex md:flex-row md:justify-evenly p-1">
           <li
             class="border-red-700 border-r-4 md:border-b-4 md:border-r-0 mx-2 px-1 w-fit h-fit text-lg"
           >
@@ -133,20 +139,24 @@
     </header>
     <div class="text-center md:text-end p-8">
       <button
-        class="border-blue border-3 rounded-lg p-2 uppercase tracking-wider text-lg font-bold hover:text-blue-200 hover:bg-blue-900  transition-all duration-300 ease-in-out"
+        class="border-blue border-3 rounded-lg p-2 uppercase tracking-wider text-lg font-bold hover:text-blue-200 hover:bg-blue-900 transition-all duration-300 ease-in-out"
       >
         Log in
       </button>
       <button
-        class="border-blue border-3 rounded-lg p-2 uppercase tracking-wider text-lg font-bold ml-8 hover:text-blue-200 hover:bg-blue-900  transition-all duration-300 ease-in-out"
+        class="border-blue border-3 rounded-lg p-2 uppercase tracking-wider text-lg font-bold ml-8 hover:text-blue-200 hover:bg-blue-900 transition-all duration-300 ease-in-out"
       >
         Sign up
       </button>
     </div>
     <main>
-      <h1 class="font-bold text-4xl md:text-5xl text-center">Our popular recipes</h1>
+      <h1 class="font-bold text-4xl md:text-5xl text-center">
+        Our popular recipes
+      </h1>
       <section class="my-8 p-4 flex flex-wrap gap-4 md:grid md:grid-cols-3">
-        <section class="bg-blue-400 w-full rounded-lg overflow-hidden relative transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-105">
+        <section
+          class="bg-blue-400 w-full rounded-lg overflow-hidden relative transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-105"
+        >
           <img
             src="img/curry.jpg"
             alt="curry dish"
@@ -172,7 +182,9 @@
             <span class="font-bold uppercase ml-1">25 mins</span>
           </div>
         </section>
-        <section class="bg-blue-400 w-full rounded-lg overflow-hidden relative transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-105">
+        <section
+          class="bg-blue-400 w-full rounded-lg overflow-hidden relative transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-105"
+        >
           <img
             src="img/greeGoldRice.jpeg"
             alt="green gold rice dish"
@@ -198,7 +210,9 @@
             <span class="font-bold uppercase ml-1">40 mins</span>
           </div>
         </section>
-        <section class="bg-blue-400 w-full rounded-lg overflow-hidden relative transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-105">
+        <section
+          class="bg-blue-400 w-full rounded-lg overflow-hidden relative transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-105"
+        >
           <img
             src="img/indianDishes.jpeg"
             alt="indian dishes"
@@ -224,7 +238,9 @@
             <span class="font-bold uppercase ml-1">30 mins</span>
           </div>
         </section>
-        <section class="bg-blue-400 w-full rounded-lg overflow-hidden relative transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-105">
+        <section
+          class="bg-blue-400 w-full rounded-lg overflow-hidden relative transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-105"
+        >
           <img
             src="img/NigeriaDishes.jpeg"
             alt="Nigeria dishes"
@@ -250,7 +266,9 @@
             <span class="font-bold uppercase ml-1">50 mins</span>
           </div>
         </section>
-        <section class="bg-blue-400 w-full rounded-lg overflow-hidden relative transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-105">
+        <section
+          class="bg-blue-400 w-full rounded-lg overflow-hidden relative transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-105"
+        >
           <img
             src="img/noodles.jpg"
             alt="noodles dish"
@@ -276,7 +294,9 @@
             <span class="font-bold uppercase ml-1">35 mins</span>
           </div>
         </section>
-        <section class="bg-blue-400 w-full rounded-lg overflow-hidden relative transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-105">
+        <section
+          class="bg-blue-400 w-full rounded-lg overflow-hidden relative transition-all duration-300 ease-in-out hover:shadow-xl hover:scale-105"
+        >
           <img
             src="img/stew.jpg"
             alt="stew"
@@ -305,7 +325,12 @@
       </section>
     </main>
     <footer class="bg-blue-500 p-10 text-center">
-      <p class="font-bold text-xl md:text-2xl">&copy; 2025 <span class="text-2xl font-['Pacifico'] md:text-4xl">La Palacio del Sabor</span></p>
+      <p class="font-bold text-xl md:text-2xl">
+        &copy; 2025
+        <span class="text-2xl font-['Pacifico'] md:text-4xl"
+          >La Maison del Sabor</span
+        >
+      </p>
     </footer>
     <script src="script.js"></script>
   </body>
